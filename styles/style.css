@@ -1,8 +1,11 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: rebeccapurple;
     margin: 0px;
+}
+
+body {
+    background-image: url("../images/wood.jpg");
 }
 
 #calcBody {
@@ -11,24 +14,27 @@ html, body {
     width: 60%;
     left: 20%;
     top: 1.8%;
-    background-color: red;
+    border-radius: 5%;
+    background-color: rgb(140, 140, 140);
 }
 
 #calcScreen {
     position: relative;
     width: 90%;
     height: 25%;
-    border: 3vh solid darkgreen;
+    border: 3vh solid rgb(75, 75, 75);
+    border-top-left-radius: 7%;
+    border-top-right-radius: 7%;
     border-left-width: 6.035vh;
     border-right-width: 6.035vh;
-    background-color: greenyellow;
+    background-color: rgb(150, 240, 25);
 }
 
 #calcShade {
     position: relative;
     width: 100%;
     height: 8%;
-    background-color: darkslategray;
+    background-image: linear-gradient(to bottom, #4B4B4B 35%, #8C8C8C);
 }
 
 #buttonContainer {
@@ -46,12 +52,20 @@ html, body {
     justify-items: center;
     align-items: center;
     grid-template-columns: repeat(5, 20%);
-    background-color: floralwhite;
 }
 
 button {
     font-size: 60px;
     padding: 5% 15%;
+    border-radius: 50%;
+}
+
+#screen {
+    position: relative;
+    font-size: 18vh;
+    bottom: 75%; 
+    font-family: 'Orbitron', sans-serif;
+    text-align: end;
 }
 
 #clear {
