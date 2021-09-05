@@ -58,18 +58,23 @@ button {
     font-size: 60px;
     padding: 5% 15%;
     border-radius: 50%;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.75);
+    border-width: 2px;
 }
 
 #screen {
     position: relative;
-    font-size: 18vh;
-    bottom: 75%; 
-    font-family: 'Orbitron', sans-serif;
+    font-size: 17vh;
+    font-weight: 500;
+    bottom: 58%;
+    font-family: 'VT323', monospace;
     text-align: end;
 }
 
 #clear {
     grid-area: clear;
+    background-color: brown;
 }
 
 #zero {
@@ -114,25 +119,36 @@ button {
 
 #plus {
     grid-area: plus;
+    background-color: aqua;
 }
 
 #minus {
     grid-area: minus;
+    background-color: aqua;
 }
 
 #per {
     grid-area: per;
+    background-color: aqua;
 }
 
 #frac {
     grid-area: frac;
+    background-color: aqua;
 }
 
 #equal {
     grid-area: equal;
+    background-color: aqua;
     padding: 95% 25%;
 }
 
 #dot {
     grid-area: dot;
+    background-color: white;
+}
+
+button:active {
+    transition-duration: 50ms;
+    background-color:#8c6e6e !important;
 }
