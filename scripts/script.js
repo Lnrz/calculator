@@ -139,17 +139,26 @@ function adjustLength(n) {
     n = n.toString();
     diff = n.length - 16;
 
+    if (n.includes("e+") || n.includes("e-")) {
+
+        let arr = n.split("e");
+
+        while (diff > 0) {
+
+            arr[0] = delApprox(arr[0], 1);
+
+            diff--;
+        }
+
+        return arr[0] + "e" + arr[1];
+    }
+
     if (diff > 0) {
 
         while (diff > 0 && n.includes(".")) {
 
             n = delApprox(n, 1);
             diff--;
-            /*
-            if (!n.includes(".")) {
-                diff--;
-            }
-            */
         }
 
         if (diff > 0) {

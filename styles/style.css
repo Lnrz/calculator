@@ -10,12 +10,13 @@ body {
 
 #calcBody {
     position: absolute;
-    height: 95%;
-    width: 60%;
+    height: 904px;
+    width: 1152px;
     left: 20%;
     top: 1.8%;
-    border-radius: 5%;
+    border-radius: 4%;
     background-color: rgb(140, 140, 140);
+    border: 6px black double;
 }
 
 #calcScreen {
@@ -23,8 +24,8 @@ body {
     width: 90%;
     height: 25%;
     border: 3vh solid rgb(75, 75, 75);
-    border-top-left-radius: 7%;
-    border-top-right-radius: 7%;
+    border-top-left-radius: 4.85%;
+    border-top-right-radius: 4.85%;
     border-left-width: 6.035vh;
     border-right-width: 6.035vh;
     background-color: rgb(150, 240, 25);
